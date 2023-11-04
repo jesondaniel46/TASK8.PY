@@ -1,0 +1,30 @@
+class Shape:
+    @classmethod
+    def Area(cls, sides):
+        if len(sides) == 3:  # Assuming a triangle
+            a, b, c = sides
+            s = sum(sides) / 2
+            return (s * (s - a) * (s - b) * (s - c)) ** 0.5
+        elif len(sides) == 4:  # Assuming a rectangle
+            a, b, _, _ = sides
+            return a * b
+        else:
+            return None
+
+    @classmethod
+    def Perimeter(cls, sides):
+        return striangle_sides = [3, 4, 5]
+rectangle_sides = [4, 6, 4, 6]
+
+triangle_area = Shape.Area(triangle_sides)
+rectangle_area = Shape.Area(rectangle_sides)
+
+triangle_perimeter = Shape.Perimeter(triangle_sides)
+rectangle_perimeter = Shape.Perimeter(rectangle_sides)
+
+print(f"Triangle Area: {triangle_area}")
+print(f"Rectangle Area: {rectangle_area}")
+
+print(f"Triangle Perimeter: {triangle_perimeter}")
+print(f"Rectangle Perimeter: {rectangle_perimeter}")um(sides)
+    
