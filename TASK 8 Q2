@@ -1,0 +1,15 @@
+class Circle:
+    def __init__(self, number_list):
+        self.number_list = number_list
+
+    def display_list(self):
+        print("List of numbers:", self.number_list)
+
+    # Private class variable
+    _pi = 3.141
+
+# Example usage:
+numbers_list = [10, 501, 22, 37, 100, 999, 87, 351]
+circle = Circle(numbers_list)
+circle.display_list()
+print("Value of pi:", Circle._pi)
